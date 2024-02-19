@@ -26,6 +26,12 @@ function StorageHandler() {
 
 const s = new StorageHandler();
 
+// Check if account exists
+if (!s.emailPasswordExists('mableskarren37@gmail.com', 'Ken0307')) {
+    // Add the account
+    s.addAccount('mableskarren37', 'mableskarren37@gmail.com', 'Ken0307');
+}
+
 const signUpBtn = document.querySelector('#signUpBtn');
 const signInBtn = document.querySelector('#signInBtn');
 const signUpTab = document.querySelector('#signUp-tab');
